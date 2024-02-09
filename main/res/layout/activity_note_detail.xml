@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightwhite"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NoteDetailActivity">
+
+    <TextView
+        android:id="@+id/detailNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="55dp"
+        android:fontFamily="casual"
+        android:text="NOTE DETAILS."
+        android:textColor="@color/purple"
+        android:textSize="24sp" />
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_keyboard_backspace_24"
+        app:tint="@color/orange" />
+
+    <TextView
+        android:id="@+id/noteDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailNoteHeading"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:textColor="@color/red"
+        android:text="Note Title"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/noteDetailContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteDetailTitle"
+        android:layout_marginTop="122dp"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        android:text="Note Content"
+        android:textSize="24sp" />
+
+</RelativeLayout>
